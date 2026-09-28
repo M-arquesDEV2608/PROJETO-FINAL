@@ -1,4 +1,5 @@
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBotModule = require('node-telegram-bot-api');
+const TelegramBot = TelegramBotModule.default || TelegramBotModule;
 const axios = require('axios');
 
 // Cole o token gerado pelo BotFather aqui
